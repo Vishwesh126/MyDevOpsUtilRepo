@@ -28,3 +28,4 @@ def uploadToArtifactory() {
 
 }
 
+return this
