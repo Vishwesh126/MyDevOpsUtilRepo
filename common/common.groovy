@@ -33,7 +33,7 @@ def flushWorkspace() {
 	script {
 		sh 'rm -rf ../'+env.JOB_NAME+'/*'
 	}
-	print 'cleaned workspace'
+	echo "Workspace Cleaned"
 }
 
 return this
