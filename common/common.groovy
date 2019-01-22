@@ -28,4 +28,12 @@ def uploadToArtifactory() {
 
 }
 
+
+def flushWorkspace() {
+	script {
+		sh 'rm -rf ../'+env.JOB_NAME+'/*'
+	}
+	print 'cleaned workspace'
+}
+
 return this
